@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форми</title>
+</head>
+<body>
+<p>
+    <label for="firsrname">Name</label><br/>
+    <input type="text" id="firsrname"/>
+</p>
+<p>
+    <label for="email">Email</label><br/>
+    <input type="email"  id="email"/>
+</p>
+<p>
+    Sex<br/>
+    <input type="radio" id="male" value="male" name="sex"/><label for="male">Мужской</label><br/>
+    <input type="radio" id="female" value="female" name="sex"/><label for="female">Женский</label>
+</p>
+<p>
+    Current status<br/>
+    <input type="checkbox" id="status1"><label for="status1">Student</label><br/>
+    <input type="checkbox" id="status2"><label for="status2">Employed</label><br/>
+    <input type="checkbox" id="status3"><label for="status3">Unemployed</label><br/>
+</p>
+<p>
+    Month and Year of birth<br/>
+    <select size="1" multiple="multiple" name="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+    </select>
+    <select size="1" multiple="1"  name="year">
+        <option value="1989">1989</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+    </select>
+</p>
+<p>
+    Skills and Technologies<br/>
+    <select size="10" name="skills">
+        <optgroup label="Tech skills">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="git">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="Time mamagement">Time mamagement</option>
+            <option value="Proactivity">Proactivity</option>
+            <option value="Teamwork">Teamwork</option>
+            <option value="Leadership">Leadership</option>
+        </optgroup>
+    </select>
+</p>
+<p>
+    Photo<br/>
+    <input type="file" placeholder="Choose file" accept="image/*" name="foto"/>
+</p>
+<p>
+    <label for="comments">Comments<br/>
+        <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+    </label>
+</p>
+<p>
+    <input type="submit" value = "Save">
+</p>
+</body>
+</html>

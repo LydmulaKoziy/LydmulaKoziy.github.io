@@ -1,0 +1,22 @@
+tr:nth-child(2n){
+    background-color: #ddebf7;
+}
+tr td:nth-child(2n+1){
+    background-color:#f2f2de ;
+}
+tr td:first-child{
+    background: none;
+}
+
+/* варіант №2 */
+/*
+tr td:nth-child(2n+1),tr:nth-child(2n) td:nth-child(2n+1){
+    background-color:#f2f2de ;
+}
+tr td:first-child{
+    background: none;
+}
+tr:nth-child(2n) td,tr:nth-child(2n) td:first-child{
+    background-color: #ddebf7;
+}
+*/

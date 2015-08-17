@@ -1,0 +1,19 @@
+a[href="http://google.com"], a[href="http://maps.google.com"], a[href="http://news.google.com"] {
+     color: #666;
+ }
+a[href="http://ya.ru"], a[href="https://mail.ya.ru"], a[href="http://maps.yandex.ru"] {
+    color: #f70;
+}
+a[target="_blank"]:after{
+    content: "\2197";
+    position: absolute;
+    font-weight: bold;
+    border-top: 1px solid #f70;
+    border-right: 1px solid #f70;
+    width: 10px;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 10px;
+}

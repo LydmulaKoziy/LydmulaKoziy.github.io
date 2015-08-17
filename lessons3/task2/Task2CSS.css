@@ -1,0 +1,7 @@
+article p:first-of-type{
+    font-size: 24px;
+}
+
+article p:last-child{
+    color: #999;
+}
