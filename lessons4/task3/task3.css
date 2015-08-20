@@ -1,0 +1,25 @@
+.paginacia ul li {
+    display: inline-block;
+    font: 10px Times;
+}
+li{
+    border: 1px solid #EEE;
+    border-radius: 5px ;
+}
+a {
+    font: 10px Times;
+    color: #A64DFF;
+    text-decoration: none;
+    padding: 6px 9px;
+    display: inline-block;
+}
+.st {
+    border: none;
+}
+.paginacia a:hover {
+    background-color: #A64DFF;
+    color: #fff;
+    border-radius: 3px;
+
+}
+
