@@ -150,3 +150,11 @@ input {
     color: #fff;
     box-shadow: #16436a 0px 3px;
 }
+.ultimate {
+    line-height: 63px;
+    background-color: #00B89A;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
