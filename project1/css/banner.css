@@ -1,0 +1,45 @@
+body{
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 583px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.title{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'FuturalBT Book', sans-serif;
+}
+.first-line{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 140px;
+    line-height: 55px;
+}
+.last-line{
+    font-size: 48px;
+    font-weight: bold;
+    width: 885px;
+    margin: auto;
+}
+.text{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Calibri', sans-serif;
+    font-style: italic;
+    width: 600px;
+    margin: 18px auto 38px auto;
+    text-shadow: 0 2px 2px #000000;
+}
+.button{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 245px;
+    height: 58px;
+    background: initial;
+    border: 1px solid #ffffff;
+}
+
