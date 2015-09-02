@@ -14,9 +14,9 @@ body{
 }
 .first-line{
     font-size: 36px;
-    text-align: center;
     margin-top: 140px;
     line-height: 55px;
+    padding-right: 35px;
 }
 .last-line{
     font-size: 48px;
@@ -32,6 +32,7 @@ body{
     width: 600px;
     margin: 18px auto 38px auto;
     text-shadow: 0 2px 2px #000000;
+    padding-right: 35px;
 }
 .button{
     font-size: 16px;
@@ -42,4 +43,6 @@ body{
     background: initial;
     border: 1px solid #ffffff;
 }
-
+span{
+    padding-right: 35px;
+}
