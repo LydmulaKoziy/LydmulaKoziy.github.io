@@ -5,11 +5,12 @@ ul{
     padding: 0;
 }
 li{
-    color: #555555;
+    color: #5D5D5D;
     list-style-type: none;
     text-align: justify;
-    text-shadow: 0 0 5px #555555;
-    font-family:  Trebuchet MS, sans-serif;
+    text-shadow: 0 0 5px #5D5D5D;
+    font-family: sans-serif;
+    opacity: 0.8;
 }
 hr {
     border-color: red;
