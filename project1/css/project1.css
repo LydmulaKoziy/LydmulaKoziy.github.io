@@ -151,7 +151,6 @@ span{
 }
 .add-two-blocks{
     height: 1140px;
-    background-color: #00B89A;
 }
 /*pice block*/
 .price-header{
@@ -285,8 +284,6 @@ input {
     width: 250px;
     margin-right: 4px;
 }
-
-/*left block*/
 .wrap_left {
     background-color: #fff;
     border: 1px solid #e8eaec;
@@ -314,8 +311,6 @@ input {
     color: #fff;
     box-shadow: #16436a 0px 3px;
 }
-
-/*right block*/
 .wrap_right {
     background-color: #fff;
     border: 1px solid #e8eaec;
