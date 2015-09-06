@@ -165,6 +165,9 @@ ul{
     border: 1px solid #ffffff;
     border-radius: 0;
 }
+span .button{
+    cursor: pointer;
+}
 span{
     padding-right: 14px;
 }
