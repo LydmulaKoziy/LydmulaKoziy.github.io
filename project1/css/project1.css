@@ -252,7 +252,10 @@ ul.middle-section-list li>div{
     display: table-cell;
     padding-left: 10px;
 }
-ul.middle-section-list li:nth-child(2n+1):before, li.middle-section-mark-color:before{
+ul.middle-section-list li>div:hover{
+    color: #3070a8;
+}
+ul.middle-section-list li:before {
     content: '';
     display: inline-block;
     width: 9px;
@@ -260,12 +263,30 @@ ul.middle-section-list li:nth-child(2n+1):before, li.middle-section-mark-color:b
     border-radius: 9px;
     background-color: #9d9d9d;
 }
-li.middle-section-mark-color:before{
-    background-color: #3070a8;
+
+/*ul.middle-section-list li:nth-child(2n+1):before, li.middle-section-mark-color:before{*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*width: 9px;*/
+    /*height: 9px;*/
+    /*border-radius: 9px;*/
+    /*background-color: #9d9d9d;*/
+/*}*/
+ul.middle-section-list li:before:hover{
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+background-color: #3070a8;
 }
-.middle-section-mark-color{
-    color: #3070a8;
-}
+
+/*li.middle-section-mark-color:before{*/
+    /*background-color: #3070a8;*/
+/*}*/
+/*.middle-section-mark-color{*/
+    /*color: #3070a8;*/
+
 /*Pricing*/
 .price-header{
     font-size: 30px;
