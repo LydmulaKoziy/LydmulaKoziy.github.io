@@ -143,7 +143,6 @@ ul{
     font-family: Futura Bk BT Book;
     margin-top: 140px;
     line-height: 50px;
-    padding-right: 21px;
 }
 .last-line{
     font-size: 48px;
@@ -174,7 +173,7 @@ ul{
     border-radius: 0;
     cursor: pointer;
 }
-/*services block*/
+/*services*/
 
 .header-services{
     color: #41525c;
@@ -267,7 +266,7 @@ li.middle-section-mark-color:before{
 .middle-section-mark-color{
     color: #3070a8;
 }
-/*pice block*/
+/*Pricing*/
 .price-header{
     font-size: 30px;
     text-align: center;
@@ -386,6 +385,7 @@ input {
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .list input{
@@ -450,11 +450,13 @@ input {
 .envelopment-price{
     margin-bottom: 75px;
 }
-/*reviews*/
+/*Testimonials*/
 .envelopment-review {
-    background: url(../img/background.png) repeat-x;
-    min-height: 350px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    min-height: 315px;
     background-size: cover;
+
 }
 .header-review {
     font-family:Futura BT Bold;
@@ -476,8 +478,8 @@ input {
     border-right: 20px solid #f7f7f7;
     border-bottom: 15px solid transparent;
     display: inline-block;
-    left: 120px;
-    top: 30px;
+    left: 110px;
+    top: 33px;
     position: absolute;
 }
 a {
@@ -489,26 +491,33 @@ a {
     font-family: OpenSans-Semibold;
     font-size: 13px;
     line-height: 40px;
+    padding-left: 10px;
 }
 .hyphen:before{
     content: "- ";
 }
+div.fl-right a.name{
+    padding-right: 2px;
+}
 .line{
     border-top: 2px dotted #777777;
     color: #777777;
-    line-height: 20px;
-    padding: 5px;
+    margin-top: -6px;
+
 }
 .font-dekor{
     font-family: OpenSansRegular;
     font-size: 13px;
-    font-style: italic;
+    color: #777777;
+    padding: 5px 15px;
+    line-height: 24px;
 }
 .fl-left{
     float: left;
 }
 .fl-right{
     float: right;
+    padding-right: 15px;
 }
 .review{
     display:inline-block;
@@ -518,27 +527,106 @@ a {
     text-align: justify;
 }
 .review>img{
-    width: 99px;
-    height: 99px;
+    width: 100px;
+    height: 100px;
 }
 
 .review_description {
     background: #f7f7f7;
-    width: 310px;
-    height: 99px;
+    max-width: 364px;
+    height: 100px;
     display: inline-block;
-    padding: 0 10px;
-    /*overflow: auto;*/
-    margin-left: 30px;
+    overflow: auto;
+    margin-left: 25px;
+}
+@media (max-width: 492px) {
+    .triangle{
+        left: 7px;
+        top: 135px;
+    }
 }
 .clear{
     clear: both;
 }
 .empty{
     width: 100%;
-    font-size: 0px;
+    font-size: 0;
     display: inline-block;
 }
 .mr-10{
     margin-right: -10px;
+}
+
+.Footer{
+    background-image: url("../img/background-footer.png");
+    background-repeat: no-repeat;
+    max-height: 437px;
+    background-size: cover;
+    padding-bottom: 36px;
+}
+.contact{
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    color: #666666;
+    padding-top: 39px;
+}
+
+div.contact ul li:first-child:before{
+    content: url("../img/footer-mark1.png");
+    position: relative;
+    bottom: 75px;
+}
+div.contact ul li:nth-child(2):before{
+    content: url("../img/footer-mark2.png");
+    position: relative;
+    top: 10px;
+    padding-right: 5px;
+}
+div.contact ul li:last-child:before{
+    content: url("../img/footer-mark3.png");
+    position: relative;
+    top: 6px;
+}
+div.contact ul li>div{
+    display: inline-block;
+    padding-left: 31px;
+    line-height: 30px;
+}
+.online.img{
+    width: 46px;
+    height: 46px;
+}
+.online{
+    margin-top: 36px;
+}
+.online ul>li{
+    padding-right: 20px;
+}
+.online ul li{
+    display: inline-block;
+}
+.footer-down{
+    background-color: #3070a8;
+    min-height: 104px;
+    text-align: center;
+    margin-top: -4px;
+}
+div.footer-down>div{
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    color: #ffffff;
+    max-width: 374px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    line-height: 30px;
+}
+div.footer-down>div>a{
+    font-family: OpenSans-Semibold;
+    color: #ffffff;
+}
+div.footer-down>div>span>a{
+    color: #000000;
+    font-family: OpenSans-Semibold;
 }
