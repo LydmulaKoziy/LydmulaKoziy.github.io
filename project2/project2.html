@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project2</title>
+    <link rel="stylesheet" type="text/css" href="css/project2.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <span class="showcasing-work">
+            Showcase your work like a pro.
+        </span>
+        <span>Contact me if you like my work</span>
+    </div>
+    <div class="gallery">
+        <div class="foto-wrap">
+            <a class="foto">
+                <img alt="bicycle" src="img/photo1.png"/>
+            </a>
+
+            <div class="button">
+                <span><input type="image" name="zoom" value="zoom" onclick="showFullSize('img/fs-photo1.png')" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+        <div class="foto-wrap">
+            <a class="foto"><img alt="girl" src="img/photo2.png"></a>
+
+            <div class="button">
+                <span><input type="image" onclick="showFullSize('img/fs-photo2.png')" name="zoom" value="zoom" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+        <div class="foto-wrap">
+            <a class="foto"><img alt="smile" src="img/photo3.png"></a>
+
+            <div class="button">
+                <span><input type="image" name="zoom" onclick="showFullSize('img/fs-photo3.png')" value="zoom" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+        <div class="foto-wrap">
+            <a class="foto"><img alt="cup" src="img/photo4.png"></a>
+
+            <div class="button">
+                <span><input type="image" name="zoom" onclick="showFullSize('img/photo4.png')" value="zoom" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+        <div class="foto-wrap">
+            <a class="foto"><img alt="bicycle" src="img/photo5.png"></a>
+
+            <div class="button">
+                <span><input type="image" name="zoom" onclick="showFullSize('img/photo5.png')" value="zoom" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+        <div class="foto-wrap">
+            <a class="foto"><img alt="bicycle" src="img/photo6.png"></a>
+
+            <div class="button">
+                <span><input type="image" name="zoom" onclick="showFullSize('img/photo6.png')" value="zoom" src="img/zoom.png"></span>
+                <span><input type="image" name="link" value="link" src="img/link.png"></span>
+            </div>
+        </div>
+
+        <span class="empty"></span>
+    </div>
+    <div id="modal-image-window" class="img-full-width-section">
+        <div class="opacity-background"></div>
+        <div class="img-container">
+            <div>
+                <span class="close-button" onclick="closeWindow()">&times;</span>
+                <img id="img-full-size" src="img/fs-photo1.png" alt="image 1 full size"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function showFullSize(src){
+        document.getElementById('img-full-size').src = src;
+        var el = document.getElementById('modal-image-window');
+        if(el) {
+            el.className += el.className ? ' show-modal' : 'show-modal';
+        }
+    }
+
+    function closeWindow(){
+        document.getElementById('modal-image-window').className = 'img-full-width-section';
+    }
+</script>
+</body>
+</html>
