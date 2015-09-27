@@ -29,6 +29,7 @@ body {
     margin-left: auto;
     background: #ffffff;
     margin-top: 60px;
+    margin-bottom: 60px;
     border: 1px solid #eeeeee;
     border-radius: 3px;
     font-family: Oxygen-Regular;
@@ -41,7 +42,9 @@ body {
 a {
     text-decoration: none;
 }
-
+li{
+    list-style: none;
+}
 .logo a {
     font-size: 40px;
     color: #222222;
@@ -182,37 +185,54 @@ a {
     height: 198px;
     margin-top: 60px;
     margin-left: 75px;
-    /*margin-bottom: 56px;*/
     position: relative;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-
-.slider-section:before, .slider-section:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    top: 50%;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    -moz-border-radius: 100px / 10px;
-    border-radius: 100px / 10px;
+.slider-section {
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.slider-section:after {
-    right: 10px;
-    left: auto;
-    -webkit-transform: skew(8deg) rotate(3deg);
-    -moz-transform: skew(8deg) rotate(3deg);
-    -ms-transform: skew(8deg) rotate(3deg);
-    -o-transform: skew(8deg) rotate(3deg);
-    transform: skew(8deg) rotate(3deg);
-}
+/*.slider-section:before,*/
+/*.slider-section:after {*/
+    /*content:"";*/
+    /*position:absolute;*/
+    /*z-index:-2;*/
+/*}*/
+
+
+
+/*.slider-section:before, .slider-section:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    /*-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+    /*-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+    /*top: 50%;*/
+    /*bottom: 0;*/
+    /*left: 10px;*/
+    /*right: 10px;*/
+    /*-moz-border-radius: 100px / 10px;*/
+    /*border-radius: 100px / 10px;*/
+/*}*/
+
+/*.slider-section:after {*/
+    /*right: 10px;*/
+    /*left: auto;*/
+    /*-webkit-transform: skew(8deg) rotate(3deg);*/
+    /*-moz-transform: skew(8deg) rotate(3deg);*/
+    /*-ms-transform: skew(8deg) rotate(3deg);*/
+    /*-o-transform: skew(8deg) rotate(3deg);*/
+    /*transform: skew(8deg) rotate(3deg);*/
+/*}*/
 
 .description-text-setion {
     display: inline-block;
@@ -284,6 +304,7 @@ button img {
 }
 .the-undiscovered-beauty-block{
     margin-top: 6px;
+    margin-bottom: -4px;
 }
 .photo-block-wrap{
     text-align: justify;
@@ -291,13 +312,13 @@ button img {
 .the-undiscovered-beauty-block-name {
     font-size: 18px;
     color: #222222;
-    line-height: 49px;
+    line-height: 46px;
     padding-left: 2px;
-    /*font-weight: bold;*/
+    padding-bottom: 3px;
 }
 
 .photo-block {
-    width: 301px;
+    width: 302px;
     display: inline-block;
     vertical-align: top;
 
@@ -311,10 +332,70 @@ button img {
     background-repeat: repeat-x;
     background-position: 0px bottom;
 }
+.photo-block-imge:hover{
+    background-color: #f0f0f0;
+    background-image: url("../img/background-photo1-hover.png");
+    background-repeat: repeat-x;
+    background-position: 0px bottom;
+}
+.icon-left{
+    position: absolute;
+    top: 140px;
+    left: 7px;
+}
+.icon-rigth{
+    position: absolute;
+    right: 7px;
+    top: 140px;
+}
+/*.slider-section:before{*/
+    /*content: url("../img/spider-man-icon-rigth.png");*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 224px;*/
+    /*z-index: 1;*/
+    /*opacity: 1;*/
+    /*height: 53px;*/
+
+/*}*/
+/*.slider-section:after{*/
+    /*content: url("../img/spider-man-icon-left.png");*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*z-index: 1;*/
+    /*left: 3px;*/
+    /*opacity: 1;*/
+    /*height: 53px;*/
+/*}*/
+.sider-buttom-text{
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    height: 54px;
+    opacity: 0.7;
+    margin-left: 43px;
+    background-color: #0b0f13;
+    border-radius: 2px;
+    width: 214px;
+
+    z-index: 2;
+}
+.sider-buttom-text>div{
+    font: 13px 'Arial', sans-serif;
+    color: white;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.from{
+    font-size: 11px;
+    color: #ffc14c;
+}
+.texas{
+    font: 13px 'Arial', sans-serif;
+    color: #676767;
+}
 .photo-block img {
     border: 2px solid #ffffff;
-    /*margin-left: 1px;*/
-    margin-top: 1px;
 }
 
 .photo-block-name {
@@ -345,20 +426,32 @@ button img {
 
 .tabs {
     position: relative;
-    min-height: 200px; /* This part sucks */
+    min-height: 235px;
     clear: both;
-    margin-top: 29px;
+    margin-top: 19px;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    margin-bottom: 33px;
+    background: rgb(253,253,253); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(253,253,253,1) 0%, rgba(248,248,248,1) 55%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,253,253,1)), color-stop(55%,rgba(248,248,248,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(248,248,248,1) 55%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(248,248,248,1) 55%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(248,248,248,1) 55%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(253,253,253,1) 0%,rgba(248,248,248,1) 55%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
 }
 .tabs-name{
     font-family: Oxygen-Regular;
     font-size: 18px;
     color: #222222;
-    margin-top: -4px;
+    margin-top: -1px;
 }
 .tab {
     float: left;
-    margin-top: 2px;
+    margin-top: 8px;
 }
+
 .tab label {
     background: rgb(253,253,253); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(253,253,253,1) 0%, rgba(248,248,248,1) 55%); /* FF3.6+ */
@@ -372,24 +465,32 @@ button img {
     font-family: Arial-Regular;
     font-size: 14px;
     text-shadow: 0px -2px #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ececec;
-    margin-left: -1px;
+    padding: 11px 10px 14px 13px;
+    border-right: 1px solid #ececec;
     position: relative;
-    left: 1px;
+}
+.tab-no{
+    float: left;
+    margin-top: 2px;
+    width: 25px;
 }
 .tab [type=radio] {
     display: none;
 }
+.content{
+    display: inline-block;
+    width: 890px;
+}
 .tab-content {
+    font-family: Arial-Regular;
     position: absolute;
-    top: 33px;
+    top: 41px;
     left: 0;
     background: white;
     right: 0;
     bottom: 0;
     padding: 25px 20px;
-    border: 1px solid #ececec;
+    border-top: 1px solid #ececec;
 }
 [type=radio]:checked ~ label {
     background: white;
@@ -400,4 +501,156 @@ button img {
 }
 [type=radio]:checked ~ label ~ .tab-content {
     z-index: 1;
+}
+.tab-content-name{
+    font-size: 14px;
+    color: #484848;
+    line-height: 23px;
+}
+.tab-content-img{
+    float: left;
+    width: 275px;
+    margin-top: 11px;
+}
+.content-list{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    width: 293px;
+    margin-left: 17px;
+    margin-top: -4px;
+}
+.content-img-text>span{
+    font-weight: bold;
+    color: #333333;
+}
+.content-img{
+    float: left;
+    border: 1px solid #f1f1f1;
+    margin-right: 7px;
+}
+.content-img img{
+    width: 116px;
+    height: 93px;
+    padding: 2px 2px 0 2px;
+}
+.content-img-text{
+    font-size: 12px;
+    line-height: 20px;
+    color: #c3c3c3;
+    margin-top: -2px;
+}
+.content-img-text, x:-moz-any-link{
+    width: 290px;
+}
+.last{
+    margin-left: 30px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.footer{
+    font-family: Arial-Regular;
+    font-size: 12px;
+    color: #666666;
+    text-align: justify;
+    margin-top: 18px;
+    line-height: 15px;
+}
+.footer-list ul{
+    padding-left: 3px;
+    margin-top: 10px;
+}
+.footer-list span, .footer-list-last span{
+    color: #ffad19;
+    font-weight: bold;
+}
+.footer-list-last span{
+    margin-left: -10px;
+}
+dd{
+    font-size: 11px;
+    color: #b0b0b0;
+    margin-left: 0;
+}
+.footer-list{
+    display: inline-block;
+    /*float: left;*/
+    vertical-align: top;
+    width: 200px;
+}
+.footer-list-last {
+    display: inline-block;
+    width: 430px;
+    margin-left: -7px;
+}
+.footer-list-last ul li, x:-moz-any-link {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.content-list ul li{
+    list-style-image: url("../img/icon-list.png");
+}
+.content-list ul{
+    margin-top: 13px;
+    padding-left: 5px;
+}
+.footer-list ul li{
+    padding: 7px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer-list-last ul li {
+    border-bottom: 1px solid #e5e5e5;
+    background-image: url("../img/icon-list-last.png");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.footer-list ul li:last-child{
+    border-bottom: none;
+}
+.footer-list-last ul{
+    margin-left: -50px;
+}
+.color{
+    background-color: #ffe7b9;
+}
+/*.wrap div {*/
+    /*font-size:16px;*/
+    /*font-weight:bold;*/
+/*}*/
+
+
+.wrap:before,
+.wrap:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: -765px;
+    left: 128px;
+    width: 50%;
+    height: 22%;
+    max-width: 378px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -ms-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+
+.wrap:after {
+    right:215px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+}
+
+.wrap:before,
+.wrap:after, x:-moz-any-link{
+    bottom: -775px;
 }
