@@ -348,25 +348,6 @@ button img {
     right: 7px;
     top: 140px;
 }
-/*.slider-section:before{*/
-    /*content: url("../img/spider-man-icon-rigth.png");*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 224px;*/
-    /*z-index: 1;*/
-    /*opacity: 1;*/
-    /*height: 53px;*/
-
-/*}*/
-/*.slider-section:after{*/
-    /*content: url("../img/spider-man-icon-left.png");*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*z-index: 1;*/
-    /*left: 3px;*/
-    /*opacity: 1;*/
-    /*height: 53px;*/
-/*}*/
 .sider-buttom-text{
     display: block;
     position: absolute;
@@ -653,4 +634,10 @@ dd{
 .wrap:before,
 .wrap:after, x:-moz-any-link{
     bottom: -775px;
+}
+/*.fa{*/
+    /*color: red;*/
+/*}*/
+.photo-block-buttons{
+
 }
