@@ -72,7 +72,7 @@ body{
     visibility: visible;
 }
 .foto-wrap:hover a img{
-    visibility: inherit;
+    /*visibility: inherit;*/
     opacity: 0.1;
 }
 
