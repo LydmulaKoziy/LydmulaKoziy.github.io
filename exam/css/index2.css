@@ -296,12 +296,22 @@ button img {
     padding-left: 15px;
     margin: 0px 10px 5px 0;
 }
+.button>div>form>input {
+    margin-left: 223px;
+    position: absolute;
+    top: 283px;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
 .fa{
     color: #f3e1c1;
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 225px;
+    margin-top: 14px;
+    margin-left: 226px;
 }
 .sample{
     color: #afceb4;
