@@ -305,6 +305,7 @@ button img {
     background-color: transparent;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 .fa{
     color: #f3e1c1;
