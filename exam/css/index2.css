@@ -98,6 +98,7 @@ li{
 .menu ul li {
     display: inline-block;
     position:relative;
+    vertical-align: top;
 }
 .sub-menu  ul li{
     display:inline-block;
@@ -106,6 +107,10 @@ li{
     color: #8a8a8a;
     display: inline-block;
 }
+/*.menu>ul>li>a{*/
+    /*position: absolute;*/
+    /*height: 50px;*/
+/*}*/
 
 .menu span {
     display: inline-block;
@@ -140,10 +145,15 @@ li{
     border-radius: 2px;
     text-shadow: 0px -1px 1px #eaa948;
 }
-/*.menu>ul>li:hover>a{*/
-    /*padding-bottom: 20px;*/
-    /*height: 0px;*/
-/*}*/
+.menu>ul>li:hover>a{
+    padding-bottom: 20px;
+    height: 0px;
+}
+.menu>ul>li:hover .sub-menu-content{
+    padding-top: 26px;
+    position: absolute;
+    width: 100%;
+}
 .menu a:hover {
     font-weight: bold;
 }
@@ -154,7 +164,10 @@ li{
     background-color: #fff;
 }
 ul.sub-menu  li{
-    display:inline;
+    display: block;
+    border-bottom: 1px solid #dddddd;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .sub-menu-wrap ul {
     display: inline;
@@ -178,7 +191,7 @@ ul.sub-menu  li{
 .menu>ul>li:hover .sub-menu-wrap {
     display: block;
     position: absolute;
-    /*top: 26px;*/
+    top: 26px;
     left: -10px;
 }
 .sub-menu-wrap ul li a:hover{
@@ -192,7 +205,7 @@ ul.sub-menu  li{
     padding: 7px 55px 3px 3px;
     white-space: nowrap;
     border-radius: 0px;
-    border-bottom: 1px solid #dddddd;
+
     margin: 7px;
 }
 .menu li ul li:last-child a{
@@ -419,8 +432,9 @@ button img {
     width: 141px;
     /* margin: 0 auto; */
     position: relative;
-    bottom: 278px;
+    bottom: 88px;
     margin-left: 97px;
+    height: 0px;
 }
 .photo-block-buttons span:before{
     content: " ";
@@ -532,7 +546,6 @@ button img {
     font-family: Oxygen-Regular;
     font-size: 18px;
     color: #222222;
-    margin-top: -23px;
 }
 .tab {
     float: left;
