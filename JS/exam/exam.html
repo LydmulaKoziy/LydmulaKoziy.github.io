@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link type="text/css" rel="stylesheet" href="css/exam.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/exam.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <div>
+        <label for="show_next_round_button">Show 'Next round' button after each round?</label>
+        <input checked = "checked" type="checkbox" id="show_next_round_button" name="show_next_round_button">
+    </div>
+    <table class="time_section">
+        <tr>
+            <td id="user_time_left" class="hidden">
+                <span class="time">0.0</span>
+            </td>
+            <td class="time_for">
+                <span class="mark_left hidden"><</span>
+                <span class="title">Time. You</span>
+                <span class="mark_right hidden">></span>
+            </td>
+            <td id="user_time_right"  class="hidden">
+                <span class="time">0.0</span>
+            </td>
+        </tr>
+        <tr>
+            <td id="gunman_time_left"  class="hidden">
+                <span class="time">0.0</span>
+            </td>
+            <td class="time_for">
+                <span class="mark_left hidden"><</span>
+                <span class="title">Gunman</span>
+                <span class="mark_right hidden">></span>
+            </td>
+            <td id="gunman_time_right" class="hidden">
+                <span class="time">0.0</span>
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="wrap">
+        <div class="looser_background hidden"></div>
+        <img name="background_game" alt="background_game" src="img/bg.png">
+        <div class="step_1" id="gun_man_wrapper" >
+            <div id="hat"></div>
+        </div>
+        <div id="notifications" class="">
+            <span class="notification_text"></span>
+        </div>
+        <div id="play-button">
+            <img title="Play game" src="img/play_button.png" alt="play button"/>
+        </div>
+        <div id="play-next-round-button">
+            <img title="Play next round" src="img/play_next_round.png" alt="play next round button"/>
+        </div>
+    </div>
+
+    <table class="reward_section">
+        <tr>
+            <td class="points_left hidden">
+                <span class="currency"> $ </span>
+                <span class="reward_value">0</span>
+                <br/>
+                <span class="reward_title">Rewards</span>
+            </td>
+            <td class="score_section">
+                <span id="score">00000</span>
+                <br/>
+                <span class="score_title">Score</span>
+            </td>
+            <td class="win_and_life_section">
+                <span class="won">Won: </span>
+                <span id="won" class="hidden">0</span>
+                <br/>
+                <span class="life">Life: </span>
+                <span id="life" class="hidden">3</span>
+            </td>
+            <td class="points_right hidden">
+                <span class="currency"> $ </span>
+                <span class="reward_value">0</span>
+                <br>
+                <span class="reward_title">Rewards</span>
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

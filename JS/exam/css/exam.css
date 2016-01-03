@@ -1,0 +1,423 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+label{
+    color: white;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+.wrap.game_started{
+    cursor: url(../img/attack_cursor.png), auto;
+}
+img {
+    width: 100%;
+}
+table.time_section tr td, .reward_section tr td {
+    width:400px;
+    font-size: 32px;
+    color: #5EBB09;
+    text-align: center;
+}
+#gun_man_wrapper {
+    position: absolute;
+    bottom: 175px;
+    background-size: 740px;
+    background-repeat: no-repeat;
+    display: none;
+}
+.hidden {
+    visibility: hidden;
+}
+/*gun man 1*/
+.gun_man_1{
+    height: 100px;
+    width: 51px;
+}
+#gun_man_wrapper.gun_man_1.step_1{
+    background-image: url("../img/gunman.png");
+    background-position: 0px 0px;
+}
+#gun_man_wrapper.gun_man_1.step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -55px 0px;
+}
+#gun_man_wrapper.gun_man_1.step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -107px 0px;
+}
+#gun_man_wrapper.gun_man_1.fire{
+    background-image: url("../img/gunman.png");
+    background-position: -158px 0px;
+}
+/*gun man 2*/
+.gun_man_2{
+    height: 115px;
+    width: 50px;
+}
+#gun_man_wrapper.gun_man_2.step_1{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -107px;
+}
+#gun_man_wrapper.gun_man_2.step_2{
+    background-image: url("../img/gunman.png");
+
+    background-position: -55px -107px;
+}
+#gun_man_wrapper.gun_man_2.step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -107px -107px;
+}
+#gun_man_wrapper.gun_man_2.fire{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -107px;
+}
+/*gun man 3*/
+.gun_man_3{
+    height: 130px;
+    width: 45px;
+}
+#gun_man_wrapper.gun_man_3.step_1{
+    background-image: url("../img/gunman.png");
+    background-position: 3px -229px;
+}
+#gun_man_wrapper.gun_man_3.step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -43px -229px;
+}
+#gun_man_wrapper.gun_man_3.step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -87px -229px;
+}
+#gun_man_wrapper.gun_man_3.fire{
+    background-image: url("../img/gunman.png");
+    background-position: 3px -229px;
+}
+/*gun man 4*/
+.gun_man_4{
+    height: 104px;
+    width: 53px;
+}
+#gun_man_wrapper.gun_man_4.step_1{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -358px;
+}
+#gun_man_wrapper.gun_man_4.step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -54px -358px;
+}
+#gun_man_wrapper.gun_man_4.step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -106px -358px;
+}
+#gun_man_wrapper.gun_man_4.fire{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -358px;
+}
+/*gun man 5*/
+.gun_man_5{
+    height: 110px;
+    width: 53px;
+}
+#gun_man_wrapper.gun_man_5.step_1{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -467px;
+}
+#gun_man_wrapper.gun_man_5.step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -52px -467px;
+}
+#gun_man_wrapper.gun_man_5.step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -106px -467px;
+}
+#gun_man_wrapper.gun_man_5.fire{
+    background-image: url("../img/gunman.png");
+    background-position: 0px -467px;
+}
+#play-button, #play-next-round-button {
+    width: 60px;
+    position: absolute;
+    bottom: 270px;
+    left: 50%;
+    cursor: pointer;
+}
+#play-button img, #play-next-round-button img{
+    cursor: pointer;
+}
+#play-next-round-button{
+    display: none;
+}
+.looser_background{
+    width: 100%;
+    position: absolute;
+    height: 458px;
+    background-color: red;
+    opacity: 0.5;
+}
+.pause{
+    color: #fff;
+}
+#notifications{
+    display: none;
+    bottom: 290px;
+    height: 77px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span.notification_text{
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    width: inherit;
+}
+/* You won */
+.you_won{
+    left: 350px;
+}
+.you_won.left{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 177px;
+
+}
+.you_won.right{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 160px;
+    background-position: -176px 0px;
+}
+/* Bonus*/
+.bonus{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 180px;
+    background-position: -346px 0px;
+    left: 350px;
+}
+/* Fire foul */
+.fire_foul.left{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 104px;
+    background-position: -538px 0px;
+}
+.fire_foul.right{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 104px;
+    background-position: -655px 0px;
+}
+/*You Lost*/
+.you_lost{
+    left: 350px;
+}
+.you_lost.left{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 162px;
+    background-position: -771px 0px;
+}
+.you_lost.right{
+    background-image: url("../img/action.png");
+    position: absolute;
+    width: 162px;
+    background-position: -943px 0px;
+}
+/*fire_eye*/
+.gun_man_1.fire_eye{
+    width: 55px;
+    background-image: url("../img/gunman.png");
+    background-position: -318px 0px;
+}
+.gun_man_2.fire_eye{
+    width: 49px;
+    background-image: url("../img/gunman.png");
+    background-position: -159px -107px;
+}
+.gun_man_3.fire_eye{
+    background-image: url("../img/gunman.png");
+    background-position: -133px -229px;
+}
+.gun_man_4.fire_eye{
+    background-image: url("../img/gunman.png");
+    background-position: -160px -358px;
+}
+.gun_man_5.fire_eye{
+    width: 50px;
+    background-image: url("../img/gunman.png");
+    background-position: -160px -467px;
+}
+/*fire_step_1,3*/
+.gun_man_1.fire_step_1, .gun_man_1.fire_step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -373px 0px;
+    /*width: 55px;*/
+}
+.gun_man_2.fire_step_1{
+    width: 41px;
+    background-image: url("../img/gunman.png");
+    background-position: -207px -107px;
+}
+.gun_man_3.fire_step_1, .gun_man_3.fire_step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -180px -229px;
+}
+.gun_man_4.fire_step_1, .gun_man_4.fire_step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -212px -358px;
+}
+.gun_man_5.fire_step_1, .gun_man_5.fire_step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -209px -467px;
+    width: 48px;
+}
+/*fire_step_2*/
+.gun_man_1.fire_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -427px 0px;
+}
+.gun_man_2.fire_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -248px -107px;
+    width: 41px;
+
+}
+.gun_man_3.fire_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -227px -229px;
+}
+.gun_man_4.fire_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -264px -358px;
+}
+.gun_man_5.fire_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -258px -467px;
+    width: 48px;
+}
+/*fire_step_3*/
+.gun_man_2.fire_step_3{
+    background-image: url("../img/gunman.png");
+    background-position: -289px -107px;
+    width: 41px;
+}
+/*fire_hide_gun*/
+.gun_man_1.fire_hide_gun{
+    background-image: url("../img/gunman.png");
+    background-position: -479px 0px;
+}
+.gun_man_2.fire_hide_gun{
+    width: 45px;
+    background-image: url("../img/gunman.png");
+    background-position: -330px -107px;
+}
+.gun_man_3.fire_hide_gun{
+    width: 45px;
+    background-image: url("../img/gunman.png");
+    background-position: -276px -229px;
+}
+.gun_man_4.fire_hide_gun{
+    background-image: url("../img/gunman.png");
+    background-position: -317px -358px;
+}
+.gun_man_5.fire_hide_gun{
+    background-image: url("../img/gunman.png");
+    background-position: -307px -467px;
+    width: 48px;
+}
+/*is_killed_step_1*/
+.gun_man_1.is_killed_step_1{
+    background-image: url("../img/gunman.png");
+    background-position: -533px 0px;
+}
+.gun_man_2.is_killed_step_1, .gun_man_2.is_killed_step_2{
+    width: 45px;
+    background-image: url("../img/gunman.png");
+    background-position: -377px -107px;
+}
+.gun_man_3.is_killed_step_1, .gun_man_3.is_killed_step_2{
+    width: 52px;
+    background-image: url("../img/gunman.png");
+    background-position: -324px -229px;
+}
+.gun_man_4.is_killed_step_1, .gun_man_4.is_killed_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -370px -358px;
+}
+.gun_man_5.is_killed_step_1{
+    width: 53px;
+    background-image: url("../img/gunman.png");
+    background-position: -356px -467px;
+}
+/*is_killed_step_2*/
+.gun_man_1.is_killed_step_2{
+    background-image: url("../img/gunman.png");
+    background-position: -588px 0px;
+}
+.gun_man_5.is_killed_step_2{
+    width: 53px;
+    background-image: url("../img/gunman.png");
+    background-position: -410px -467px;
+}
+/*Hat*/
+#hat {
+    position: absolute;
+    display: none;
+}
+
+#hat.h_gun_man_1{
+    display: block;
+    background-image: url("../img/gunman.png");
+    background-position: -639px -88px;
+    bottom: 100px;
+    background-size: 740px;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 53px;
+}
+#hat.h_gun_man_3{
+    display: block;
+    background-image: url("../img/gunman.png");
+    background-position: -377px -340px;
+    bottom: 150px;
+    background-size: 740px;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 27px;
+    right: 0px;
+}
+#hat.h_gun_man_4{
+    display:block;
+    background-image: url("../img/gunman.png");
+    background-position: -424px -436px;
+    bottom: 100px;
+    background-size: 740px;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 53px;
+}
+
+#hat.h_gun_man_5{
+    display: block;
+    background-image: url("../img/gunman.png");
+    background-position: -465px -556px;
+    bottom: 100px;
+    background-size: 740px;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 32px;
+    left: 10px;
+}
